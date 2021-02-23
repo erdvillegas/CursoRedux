@@ -1,13 +1,14 @@
+import { v4 as uuidv4 } from 'uuid';
 
 
 export class Todo {
-  public id: number;
-  public text: string;
+  public id: string;
+  public texto: string;
   public completado: boolean;
 
-  constructor(text: string) {
-    this.text = text;
-    this.id = new Date().getTime();
+  constructor(texto: string) {
+    this.texto = texto;
+    this.id = uuidv4();
     this.completado = false;
   }
 }

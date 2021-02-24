@@ -8,7 +8,7 @@ export const crear = createAction(
 
 export const toggleAll = createAction(
   '[TODO] Toggle All Todo',
-  props<{ completado: boolean}>()
+  props<{ completado: boolean }>()
 );
 
 export const toggle = createAction(
@@ -25,3 +25,5 @@ export const borrar = createAction(
   '[TODO] Borrar Todo',
   props<{ id: string }>()
 );
+
+export const limpiarCompletados = createAction('[TODO] Limpiar Completados Todo');

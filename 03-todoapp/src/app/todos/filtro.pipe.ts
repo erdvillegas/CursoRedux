@@ -8,17 +8,13 @@ import { filtrosValidos } from '../filtro/filtro.actions';
 export class FiltroPipe implements PipeTransform {
 
   transform(todos: Todo[], filtro: filtrosValidos): Todo[] {
-
-    console.log({ todos });
-    console.log(filtro);
-
     switch (filtro) {
       case 'completados':
-        return todos.filter(({completado})=>completado);
-      
+        return todos.filter(({ completado }) => completado);
+
       case 'pendientes':
         return todos.filter(({ completado }) => !completado)
-      
+
       default:
         return todos;
     }

@@ -13,4 +13,4 @@ export const setUser = createAction(
 /**
  * Desasigna un usuario
  */
-export const unsetUser = createAction('[Auth] unsetUser');
+export const unsetUset = createAction('[Auth] unsetUser');
